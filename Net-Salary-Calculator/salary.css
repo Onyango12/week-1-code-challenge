@@ -1,0 +1,36 @@
+
+/* Styling for the input form */
+#Basic {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  /* Styling for the output */
+  div {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+  
+  /* Styling for the page title */
+  h1 {
+    text-align: center;
+  }
+  
+  /* Styling for the container div */
+  #BasicSalary {
+    margin: 20px auto;
+    width: 80%;
+  }
+
+  body {
+    background-image:url("https://images.unsplash.com/photo-1605302596032-15e67c3cf66a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  color: white;
+}
+  
