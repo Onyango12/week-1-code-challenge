@@ -4,7 +4,7 @@ body {color:blue;
       h1 {
         text-align: center;
         font-size: 36px;
-        color: #333;
+        color:whitesmoke;
       }
       form {
         display: flex;
@@ -13,7 +13,7 @@ body {color:blue;
       }
       label {
         font-size: 24px;
-        color:blue;
+        color:white;
         margin-bottom: 8px;
       }
       input[type="number"] {
