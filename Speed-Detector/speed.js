@@ -12,7 +12,7 @@ form.addEventListener('submit', (e) => {
     } else {
         const demeritPoints = Math.floor((speed - 70) / 5);
         if (demeritPoints > 12) {
-            resultDiv.textContent = 'License suspended';
+            resultDiv.textContent = `License suspended. Your demerit points are:${demeritPoints}`;
         } else {
             resultDiv.textContent = `Points: ${demeritPoints}`;
         }
