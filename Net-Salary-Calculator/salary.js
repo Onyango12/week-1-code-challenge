@@ -7,7 +7,7 @@ function grossIncome(basicSalary, ...allowances){
 	return sum
 	}
    
-	//console.log(grossIncome(20000, 6000, 43000))
+	//return(grossIncome(20000, 6000, 43000))
 	function NHIF(grossPay){
 	   if(grossPay < 6000){
 	       return 150
@@ -59,12 +59,12 @@ function grossIncome(basicSalary, ...allowances){
 	       return 1700
 	   }
        }
-       //console.log(calculateNHIF(60000))
+       //return(calculateNHIF(60000))
    
        function NSSF(pensionablePay){
 	   return pensionablePay * 0.06
        }
-       //console.log(NSSF(7000))
+       //return(NSSF(7000))
    
        function taxablePay(grossIncome, ...deductions){
 	   for(let deduction of deductions){
@@ -72,7 +72,7 @@ function grossIncome(basicSalary, ...allowances){
 	   }
 	   return grossIncome
        }
-       //console.log(taxablePay(50000, 1100, 5000))
+       //return(taxablePay(50000, 1100, 5000))
    
        function PAYEE(taxablepay){
 	   if(taxablepay <= 24000){
@@ -83,20 +83,20 @@ function grossIncome(basicSalary, ...allowances){
 	       return taxablepay * 0.3
 	   }
        }
-       //console.log(PAYEE(160000))
+       //return(PAYEE(160000))
    
        function netPay(taxablepay, payee){
 	   return taxablepay - payee
        }
-       //console.log(netPay(100000, 20000))
+       //return(netPay(100000, 20000))
        function handleSalary(event){
 	   let val = parseInt(document.getElementById("Basic").value)
 	   let basicSalary= Boolean(val)? val : 0
-       //console.log(basicSalary)
+       //return(basicSalary)
        let allowances = Array.from(document.getElementsByClassName("allowances")).map(function(element){
 	   return Boolean(element.value) ? parseInt(element.value) : 0
        })
-       //console.log(allowances)
+       //return(allowances)
        let gross = grossIncome(basicSalary, ...allowances)
        let nhifdeductions = NHIF(gross)
        let nssfdeductions = NSSF(gross)
